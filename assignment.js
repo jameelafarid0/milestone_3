@@ -14,6 +14,7 @@ function feetToMile (feet){
 
 
 
+
 function woodCalculator (chair, table, bed ){
     var chairNumber = chair * 2;
     var tableNumber = table * 4;
@@ -21,6 +22,7 @@ function woodCalculator (chair, table, bed ){
     var totalWood = chairNumber + tableNumber + bedNumber;
     return totalWood;  
 }
+
 
 
 
@@ -48,15 +50,11 @@ function brickCalculator (buildingStory){
     
     if(buildingStory > 30){
         console.log("no more than 30 story")
-
     }
 
-    
-     
-    
      return totalBrick;   
-        
 }
+
 
   
  
@@ -69,12 +67,9 @@ function tinyFriend (uniqueName){
     const nameArray = uniqueName[0].split(' ');
     const stringSorted = nameArray.sort(
         (uniqueNameA, uniqueNameB ) => {
-                   return uniqueNameA.length - uniqueNameB.length;
-
+                return uniqueNameA.length - uniqueNameB.length;
         }
     );
-    
-    
     return stringSorted[0]
 }
 
